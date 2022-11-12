@@ -85,12 +85,12 @@ public partial class Form1 : Form
 
     private float ProjectX(Vec3 position) 
     {
-        return _focalLength * position.X / (_focalLength + position.Z) * 160 + (Width / 2);
+        return _focalLength * position.X / (_focalLength + position.Z) * 200 + (Width / 2);
     }
 
     private float ProjectY(Vec3 position) 
     {
-        return _focalLength * position.Y / (_focalLength + position.Z) * 160 + (Height / 2);
+        return _focalLength * position.Y / (_focalLength + position.Z) * 200 + (Height / 2);
     }
 
     protected override void OnPaint(PaintEventArgs e)
