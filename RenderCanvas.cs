@@ -13,7 +13,7 @@ public class LineIdx {
     public int B { get; set; }
 }
 
-public partial class Form1 : Form
+public partial class RenderCanvas : Form
 {
     private readonly float _focalLength = 5;
 
@@ -45,13 +45,12 @@ public partial class Form1 : Form
         new LineIdx() { A = 7, B = 4 },
     };
 
-    public Form1()
-    {
-        InitializeComponent();
-        
+    public RenderCanvas()
+    {   
         Width = 1280;
         Height = 720;
         DoubleBuffered = true;
+        Text = "3D Software Render Experiment";
 
         var timer = new System.Timers.Timer();
         timer.Elapsed += new ElapsedEventHandler(TimerEvent);
